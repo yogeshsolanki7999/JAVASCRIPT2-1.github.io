@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pattern.css" />
+  </head>
+  <body>
+    <h1>THE ANSWER OF ASSIGNNMENT 3 IS THIS PATTERN</h1>
+    <h3>
+      YOU CAN CHANGE THE ROWS AND COLUMN BY REFRESHING THE VALUE IN PROMPT
+    </h3>
+    <h3>
+      NEXT PYRAMID PATTERN IS PRINTED ON CONSOLE THATS WHY I HAVE PRINTED THIS
+      ON SCREEN BOTH HAVE DIFFRENT LOGICS
+    </h3>
+    <div>
+      <script>
+        /*
+        This first loop is used to print the first n number of rows 
+
+        For example -
+
+        * 
+        * *
+        * * *
+        * * * *
+        * * * * *
+
+        */
+        var n = prompt("ENTER THE NUMBER OF ROWS YOU WANT");
+
+        for (var i = 0; i <= n; i++) {
+          for (var j = 0; j <= n; j++) {
+            if (j <= i) {
+              document.write("* ");
+            } else {
+              document.write("  ");
+            }
+          }
+          document.write("<br/>");
+        }
+        /*
+        This Second loop is used to print the first n number of rows 
+
+        For example -
+
+        * * * * *
+        * * * *
+        * * *
+        * *
+        *
+
+        */
+
+        for (var i = n - 1; i >= 0; i--) {
+          for (var j = n - 1; j >= 0; j--) {
+            if (j <= i) {
+              document.write("* ");
+            } else {
+              document.write("  ");
+            }
+          }
+          document.write("<br/>");
+        }
+      </script>
+    </div>
+  </body>
+</html>
